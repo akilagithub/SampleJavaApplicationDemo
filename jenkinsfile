@@ -1,0 +1,27 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Git Clone') {
+            steps {
+                echo 'This helps to clone the repo from github'
+            }
+        }
+        
+        stage('Build') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('unit test') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('Package and deploy') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
